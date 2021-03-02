@@ -259,7 +259,7 @@ export default {
       // 如果用户取消删除，则返回cancel
       // console.log(confirmResult)
       if (confirmResult !== 'confirm') {
-        return this.$message.info('已取消删除')
+        return this.$message.info('已取消删除！')
       }
       const { data: res } = await this.$http.delete('categories/' + id)
       if (res.meta.status !== 200) {
